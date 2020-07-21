@@ -89,7 +89,7 @@ jQuery(document).ready(function()
 				modal.addClass('show');
 				modal.html("");
 				modal.append('<div class="orGallery_close" onclick="orGallery_close(this);">X</div>');
-				modal.append('<img class="orGallery_imgAmpli" src="'+maxi+'" alt="'+altTxt+'">');
+				modal.append('<img class="orGallery_imgAmpli" src="'+maxi+'" alt="'+altTxt+'" title="'+altTxt+'">');
 				if(xmlData)
 				{
 					modal.append('<div class="orGallery_xmlContent">'+altTxt+'</div>');
@@ -141,7 +141,7 @@ jQuery(document).ready(function()
 			?>
 			<div class="or_gallery_image" rel-image="<?php echo JURI::root(true).'/'.$orGalleryFotoData['maxi']; ?>" rel-id="<?php echo $orGalleryId; ?>" <?php echo $orGallery_rel_xml; ?>>
 				<?php if(!$open_modal) { echo '<a href="'.JURI::root(true).'/'.$orGalleryFotoData['maxi'].' title="'.$orGalleryFotoData['title'].' target="orGalleryPhoto" >'; } ?>
-					<img src="<?php echo $orGalleryFotoData['mini']; ?>" loading="lazy" alt="<?php echo $orGalleryFotoData['title']; ?>" />
+					<img src="<?php echo $orGalleryFotoData['mini']; ?>" loading="lazy" alt="<?php echo $orGalleryFotoData['title']; ?>" title="<?php echo $orGalleryFotoData['title']; ?>" />
 					<?php if($orGallery_use_xml && !empty($orGalleryFotoData['xml_title'])) { ?>
 						<div class="or_gallery_xml_content">
 							<?php if(!empty($orGalleryFotoData['xml_title'])) { ?>
