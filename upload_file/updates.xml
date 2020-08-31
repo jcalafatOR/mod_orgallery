@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>Gallery OR Template Module</name>
+		<description>Módulo para integrar en el template de Open ROOM una Galeria de fotos</description>
+		<element>mod_orgallery</element>
+		<type>module</type>
+		<version>1.4.1</version>
+		<client>0</client>
+		<downloads>
+			<downloadurl type="update" format="zip">https://webprojects.open-room.com/updates/mod_orgallery/mod_orgallery_1-4-1.zip</downloadurl>
+		</downloads>
+		<maintainer>Open ROOM</maintainer>
+		<maintainerurl>https://www.open-room.com/</maintainerurl>
+		<tags>
+		<tag>stable</tag>
+		</tags>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="3.[23456789]" />
+		<php_minimum>7.1</php_minimum>
+	</update>
+</updates>
